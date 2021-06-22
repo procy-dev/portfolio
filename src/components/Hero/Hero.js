@@ -9,13 +9,13 @@ const Hero = (props) => (
     <LeftSection>
       <SectionTitle main center>
         Hello World, <br />
-        Welcome to my Portfolio!
+        Pleasure to Meet You!
       </SectionTitle>
       <SectionText>
-        I am a Software Engineer specializing in Front-End development with experience in the Back-End technologies to compliment
+        I'm Chris Winkler, a Software Engineer specializing in Front-End development with experience in Back-End technologies to compliment.
         With over 10 years of programming experience and 4 years in the software industry, I strive for efficiency and excellent user experience!
       </SectionText>
-      <Button href="#projects" >
+      <Button onClick={() => window.location.href='/#about'} >
         Learn More
       </Button>
     </LeftSection>

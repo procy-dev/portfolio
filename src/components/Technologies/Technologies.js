@@ -1,16 +1,15 @@
 import React from 'react';
-import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
+import { DiFirebase, DiReact, DiGhostSmall } from 'react-icons/di';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
 const Technologies = () =>  (
   <Section id="tech">
     <SectionDivider />
-    <br />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
       I've worked with a range of technologies from Front-End libraries and design tools
-      To Back-End frameworks. Check these out below!
+      to Back-End frameworks and databases.
     </SectionText>
     <List>
       <ListItem>
@@ -19,7 +18,7 @@ const Technologies = () =>  (
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
             Eperience with <br />
-            React.js
+            React.js, Material-UI, Theme-UI
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -29,17 +28,17 @@ const Technologies = () =>  (
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
             Eperience with <br />
-            Node and Databases
+            Node.js and Databases
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
-        <DiZend size="3rem" />
+        <DiGhostSmall size="3rem" />
         <ListContainer>
           <ListTitle>UI/UX</ListTitle>
           <ListParagraph>
             Eperience with <br />
-            tools like Figma
+            tools like Invision and Figma
           </ListParagraph>
         </ListContainer>
       </ListItem>

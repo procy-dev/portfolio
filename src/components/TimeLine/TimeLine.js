@@ -45,11 +45,10 @@ const Timeline = () => {
   return (
     <Section id="about">
       <SectionDivider />
-      <br />
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-        At a young age, I was always fascinated with new technologies, quickly becoming the in-family IT guy. My family was full of engineers, from Electrical to Software, who exposed me to so many cool technologies!
-        From there, the rest was history :)
+        At a young age, I was always fascinated with new technologies, quickly becoming the family IT guy. My family was full of engineers, from Electrical to Software, who exposed me to so many cool hobbies!
+        From there, the rest was history!
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={() => handleScroll()}>
         <>

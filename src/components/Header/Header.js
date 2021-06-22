@@ -1,35 +1,35 @@
 import Link from 'next/link';
 import React from 'react';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
-import { DiCssdeck } from 'react-icons/di';
+import { GiRingedPlanet } from 'react-icons/gi';
 
-import { Anchor, Container, Div1, Div2, Div3, NavLink, SocialIcons, Span } from './HeaderStyles';
+import { Anchor, Container, Div1, Div2, Div3, Li, NavLink, SocialIcons, Span } from './HeaderStyles';
 
 const Header = () =>  (
   <Container>
     <Div1>
       <Link href="/">
         <Anchor>
-          <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
+          <GiRingedPlanet size="3rem" /> <Span>ChrisWinkler.dev</Span>
         </Anchor>
       </Link>
     </Div1>
     <Div2>
-      <li>
-        <Link href="#projects">
-          <NavLink>Projects</NavLink>
-        </Link>
-      </li>
-      <li>
-        <Link href="#tech">
-          <NavLink>Technologies</NavLink>
-        </Link>
-      </li>
-      <li>
+      <Li>
         <Link href="#about">
           <NavLink>About</NavLink>
         </Link> 
-      </li>
+      </Li>
+      <Li>
+        <Link href="#tech">
+          <NavLink>Technologies</NavLink>
+        </Link>
+      </Li>
+      <Li>
+        <Link href="#projects">
+          <NavLink>Projects</NavLink>
+        </Link>
+      </Li>
     </Div2>
     <Div3>
       <SocialIcons href="https://github.com/procy-dev">
