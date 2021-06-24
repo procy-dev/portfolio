@@ -32,16 +32,21 @@ export const Li = styled.li`
   padding-right: 16px;
   max-height: 36px;
   transition: .4s ease-out;
-  &:hover {
-    box-shadow: inset 200px 0 0 0 rgb(255, 255, 255, .75);
-    opacity: 1;
-  }
-  &:hover > a {
-    color: rgb(8, 17, 36);
-  }
-  &:hover + li {
-    transition: .2s;
-    border-left: 3px solid rgba(255,255,255,0);
+  @media(hover: hover) and (pointer: fine) {
+    &:hover {
+      box-shadow: inset 200px 0 0 0 rgb(255, 255, 255, .75);
+      opacity: 1;
+      outline-width: 0;
+    }
+    &:hover > a {
+      color: rgb(8, 17, 36);
+      outline-width: 0;
+    }
+    &:hover + li {
+      transition: .2s;
+      border-left: 3px solid rgba(255,255,255,0);
+      outline-width: 0;
+    }
   }
 `;
 
@@ -102,33 +107,6 @@ export const NavLink = styled.a`
 
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0.5rem;
-  }
-`;
-
-export const ContactDropDown = styled.button`
-  border: none;
-  display: flex;
-  position: relative;
-  background: none;
-  font-size: 1.7rem;
-
-  line-height: 32px;
-  color: rgba(255, 255, 255, 0.75);
-  cursor: pointer;
-  transition: 0.3s ease;
-
-  &:focus {
-    outline: none;
-  }
-  &:hover {
-    color: #fff;
-  }
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-    padding: 0.4rem 0;
-  }
-  @media ${(props) => props.theme.breakpoints.md} {
-    padding: 0;
   }
 `;
 
