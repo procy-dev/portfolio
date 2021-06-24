@@ -30,7 +30,7 @@ const Projects = () => (
                   ))}
                 </TagList>
               </>
-            ) : <div style={{padding: '2em'}}/>}            
+            ) : <div style={{ padding: '4.1em' }}/>}            
           </div>
           <UtilityList>
             {source && (<ExternalLinks href={source}>Source</ExternalLinks>)}            

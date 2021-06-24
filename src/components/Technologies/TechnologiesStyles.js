@@ -23,10 +23,6 @@ export const ImageContainer = styled.div`
   }
 `
 
-export const MainImage = styled.img`
-  width: 100%;
-`
-
 export const List = styled.ul`
   list-style-type: none;
   display: grid;
@@ -102,32 +98,13 @@ export const ListItem = styled.li`
   display: flex;
   flex-direction: column;
 
-@media ${props => props.theme.breakpoints.md}{
-  max-width: 203px;
-}
-
-@media ${props => props.theme.breakpoints.sm}{
-  margin-bottom: 14px;
-  max-width: 320px;
-  flex-direction: row;
-}
-`
-
-export const ListIcon = styled.img`
-  display: block;
-  width: 48px;
-  height: 48px;
-  margin-bottom: 10px;
-  
   @media ${props => props.theme.breakpoints.md}{
-    width: 40px;
-    height: 40px;
-    margin-bottom: 8px;
+    max-width: 203px;
   }
 
   @media ${props => props.theme.breakpoints.sm}{
-    width: 32px;
-    height: 32px;
-    margin-bottom: 0px;
+    margin-bottom: 14px;
+    max-width: 320px;
+    flex-direction: row;
   }
 `
