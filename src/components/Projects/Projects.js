@@ -5,7 +5,7 @@ import { Section, SectionDivider, SectionTitle, SectionText } from '../../styles
 import { projects } from '../../constants/constants';
 
 const Projects = () => (
-  <Section id="projects">
+  <Section style={{ height: "fit-content" }} id="projects">
     <SectionDivider />
     <SectionTitle>Projects</SectionTitle>
     <SectionText>
@@ -23,7 +23,7 @@ const Projects = () => (
           <div>
             {tags.length > 0 ? (
               <>
-                <TitleContent>Stack</TitleContent>
+                <TitleContent>Tech</TitleContent>
                 <TagList>
                   {tags.map((tag, i) => (
                     <Tag key={i}>{tag}</Tag>

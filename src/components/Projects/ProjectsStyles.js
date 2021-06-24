@@ -1,10 +1,15 @@
 import styled from 'styled-components';
 
 export const Img = styled.img`
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 225px;
   object-fit: cover;
   overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    height: 100%;
+  }
 `
 
 export const GridContainer = styled.section`
@@ -73,9 +78,9 @@ export const CardInfo = styled.p`
   font-style: 2rem;
   line-height: 24px;
   text-align: justify;
+  min-height: 150px;
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding:.3rem
-  
+    padding: 1.5rem 
 }
 `;
 
@@ -97,7 +102,6 @@ border-radius: 15px;
 transition: 0.5s;
 &:hover{
   background: #801414;
-
 }
 `;
 

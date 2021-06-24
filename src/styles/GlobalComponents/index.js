@@ -6,10 +6,12 @@ export const Section = styled.section`
   padding: ${(props) => props.nopadding ? "0" : "32px 48px 0" } ;
   margin: 0 auto;
   max-width: 1040px;
+  height: 100vh;
   box-sizing: content-box;
   position: relative;
   overflow: hidden;
   grid-template-columns: 1fr 1fr;
+  scroll-snap-align: start;
 
   @media ${(props) => props.theme.breakpoints.md} {
     padding: 24px 48px 0;
@@ -78,6 +80,7 @@ export const SectionText = styled.p`
 
 export const SectionDivider = styled.div`
   margin-bottom: 1em;
+  margin-top: 4.5em;
   width: 64px;
   height: 6px;
   border-radius: 10px;

@@ -31,7 +31,7 @@ const GlobalStyles = createGlobalStyle`
   li{
     list-style: none;
   }
-
+   
 `;
 
 export default GlobalStyles;

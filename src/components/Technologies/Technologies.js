@@ -18,7 +18,7 @@ const Technologies = () =>  (
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
             Eperience with <br />
-            React.js, Material-UI, Theme-UI
+            React.js, Material-UI, React-Components
           </ListParagraph>
         </ListContainer>
       </ListItem>

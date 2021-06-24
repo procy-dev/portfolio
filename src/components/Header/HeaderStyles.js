@@ -2,14 +2,19 @@ import { IoIosArrowDropdown } from 'react-icons/io';
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  z-index: 1000;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 2rem;
   padding: 1rem;
   padding-top: 2rem;
-  background-color: rgb(0 11 36 / 45%);
-  border-radius: 4px;
+  background-color: rgb(8 17 36);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  position: -webkit-sticky;
+	position: sticky;
+	top: 0;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     display: grid;
@@ -21,10 +26,20 @@ export const Container = styled.div`
 `;
 
 export const Li = styled.li`
-  border-left: 2px solid rgba(255,255,255,0.75);
+  border-left: 3px solid rgba(255,255,255,0.75);
   border-radius: 2px;
-  padding: 0px 8px;
+  padding-left: 14px;
+  padding-right: 16px;
   max-height: 36px;
+  transition: .4s ease-out;
+  &:hover {
+    box-shadow: inset 200px 0 0 0 rgb(255, 255, 255, .75);
+    opacity: 1;
+  }
+  &:hover + li {
+    transition: .2s;
+    border-left: 3px solid rgba(255,255,255,0);
+  }
 `;
 
 export const Anchor = styled.a`
@@ -62,6 +77,8 @@ export const Div2 = styled.div`
 export const Div3 = styled.div`
   grid-area: 1 / 5 / 2 / 6;
   display: flex;
+  position: relative;
+  top: -8px;
   justify-content: space-around;
   align-items: center;
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -73,13 +90,13 @@ export const Div3 = styled.div`
 export const NavLink = styled.a`
   font-size: 2rem;  
   line-height: 32px;
-  color: rgba(255, 255, 255, 0.75);
-  transition: 0.4s ease;
+  color: rgba(255, 255, 255, .75);
+  transition: .4s ease-out;
+
   &:hover {
-    color: #fff;
-    opacity: 1;
-    cursor: pointer;
+    color: rgba(8, 17, 36, 1);
   }
+
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0.5rem;
   }
@@ -142,4 +159,8 @@ padding-top: 0px;
     cursor: pointer;
     
   }
+& > svg { 
+  position: relative;
+  top: 5px;
+}
 `
