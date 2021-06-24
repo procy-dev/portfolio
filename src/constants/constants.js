@@ -1,7 +1,7 @@
 export const projects = [
   {
     title: 'Memories',
-    description: "A full-stack MERN application to store pictures while adding descriptions and tags. React front-end using Node/Express server and MongoDB for data storage. Login capability with integration with Google OAuth.",
+    description: "A full-stack MERN application to store pictures while adding descriptions and tags. React front-end using Node/Express server and MongoDB for data storage. Login capability and integration with Google OAuth.",
       image: '/images/memories.png',
       tags: ['Mongo', 'Express', 'React', 'Node', 'Responsive'],
     source: 'https://github.com/procy-dev/memories',

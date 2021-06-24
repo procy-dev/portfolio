@@ -12,11 +12,11 @@ const Projects = () => (
       These are some projects I've been working on to learn new skills as well as keep old ones fresh! Often inspired by others' projects with my own touch.
     </SectionText>
     <GridContainer>
-      {projects.map(({ id, image, title, description, tags, source, visit }) => (
+      {projects.map(({ id, image, title, description, tags, source }) => (
         <BlogCard key={id}>
           <Img src={image} />
           <TitleContent>
-            <HeaderThree title>{title}</HeaderThree>
+            <HeaderThree title={1}>{title}</HeaderThree>
             <Hr />
           </TitleContent>
           <CardInfo>{description}</CardInfo>

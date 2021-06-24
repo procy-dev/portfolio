@@ -36,6 +36,9 @@ export const Li = styled.li`
     box-shadow: inset 200px 0 0 0 rgb(255, 255, 255, .75);
     opacity: 1;
   }
+  &:hover > a {
+    color: rgb(8, 17, 36);
+  }
   &:hover + li {
     transition: .2s;
     border-left: 3px solid rgba(255,255,255,0);
@@ -94,7 +97,7 @@ export const NavLink = styled.a`
   transition: .4s ease-out;
 
   &:hover {
-    color: rgba(8, 17, 36, 1);
+    
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
